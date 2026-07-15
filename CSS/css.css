@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #CBF3F0;
+}
+
+header {
+    background-color: #2EC4B6;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+main {
+
+}
+
+footer {
+    background-color: #2EC4B6;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
