@@ -10,8 +10,37 @@ header {
     grid-template-columns: 1fr 5fr;
 }
 
-main {
+.author {
+    outline: solid;
+    outline-color: #1A535C;
+    background-color: #2EC4B6;
+    border-radius: 15px;
+    display: flex;
+    padding: 1em;
+    margin: 1em;
+    align-items: center;
+}
 
+.author a {
+    color: #FFBF69;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.author img {
+    width: 100px;
+    padding-right: 1em;
+}
+
+@media (min-width:700px) {
+    .allauthors {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .author img {
+        width: 200px;
+    }
 }
 
 footer {
