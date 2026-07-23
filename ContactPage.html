@@ -48,13 +48,67 @@
 
     <main>
         <h1>Register for the Youth Book Festival Now!</h1>
-        <form>
-            <label for="fname">First name:</label><br>
-            <input type="text" id="" fname"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text' id=" lname" name="lname">
-        </form>
+        <p>Please fill out this form</p>
+        <form action="/submit-information" method="POST">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-group">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname" required>
+                </div>
+                <div class="form-group">
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="user_email" required>
+                </div>
+                <div class="field">
+                    <label for="phone">Phone Number (Optional):</label>
+                    <input type="tel" id="phone" name="user_phone">
+                </div>
+            </fieldset>
 
+            <fieldset>
+                <legend>Additional Information</legend>
+                <div class="form-group">
+                    <label>What authors are you interested in meeting? (check all that apply):</label>
+                    <div class="checkbox-group">
+
+                        <input type="checkbox" id="bs" name="author" value="BobShea">
+                        <label for="bs">Bob Shea</label>
+
+                        <input type="checkbox" id="mw" name="author" value="MoWillems">
+                        <label for="mw">Mo Willems</label>
+
+                        <input type="checkbox" id="dp" name="author" value="DavPilkey">
+                        <label for="dp">Dav Pilkey</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="suggestions">Are there any authors you'd like to see at our library?</label>
+                    <textarea id="suggestions" name="user_comments" rows="6" placeholder="Write your suggestions
+                        here!"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Would you like to receive information about future events?</label>
+                    <div class="radio-group">
+                        <input type="radio" id="y" name="interest" value="yes">
+                        <label for="y">Yes</label>
+
+                        <input type="radio" id="n" name=interest" value="no">
+                        <label for="n">No</label>
+                    </div>
+                </div>
+
+            </fieldset>
+
+            <div class="form-actions">
+                <button type="submit">Submit Information</button>
+            </div>
+        </form>
     </main>
 
     <footer>
