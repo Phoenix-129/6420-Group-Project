@@ -46,6 +46,7 @@ header {
   padding: 1em;
   gap: 1em;
   border-bottom: 4px solid #FF6B6B;
+  align-items: center;
 }
 
 .logo {
@@ -55,12 +56,7 @@ header {
   text-decoration: none;
 }
 
-navigation {
-  padding: 24px 32px;
-  margin: 16px 0;
-}
-
-navigation h3 {
+nav h3 {
   color: #1A535C;
   font-family: 'Arial', sans-serif;
   font-size: 18 px;
@@ -68,7 +64,7 @@ navigation h3 {
   text-align: center;
 }
 
-navigation ul {
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -77,7 +73,7 @@ navigation ul {
   gap: 8px;
 }
 
-navigation a {
+nav a {
   color: #1A535C;
   text-decoration: none;
   font-weight: bold;
@@ -90,13 +86,13 @@ navigation a {
   font-size: 16px;
 }
 
-navigation a:hover,
-navigation a.active {
+a:hover,
+a.active {
   background-color: #FF6B6B;
   color: #ffffff;
 }
 
-navigation a.active {
+a.active {
   background-color: #FF6B6B;
   color: #ffffff;
   font-weight: bold;
@@ -107,11 +103,17 @@ navigation a.active {
   outline: solid 3px #1A535C;
   background-color: #2EC4B6;
   border-radius: 15px;
-  display: flex;
   padding: 1em;
   margin: 1em 0;
   align-items: center;
   border-left: 8px solid #FF6B6B;
+  text-align: center;
+}
+
+.author img {
+  height: 300px;
+  border: solid;
+  border-color: #1A535C;
 }
 
 .author a {
@@ -122,12 +124,7 @@ navigation a.active {
 
 .author a:hover {
   color: #FF6B6B;
-}
-
-.author img {
-  width: 100px;
-  padding-right: 1em;
-  border-radius: 8px;
+  background: none;
 }
 
 .cards-grid {
@@ -269,12 +266,6 @@ footer p {
     align-items: center;
   }
 
-  .main-nav ul {
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 1.5rem;
-  }
-
   .main-nav a {
     background-color: transparent;
   }
@@ -291,11 +282,26 @@ footer p {
     gap: 1em;
   }
 
-  .author img {
-    width: 200px;
-  }
-
   .cards-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav {
+    flex-basis: 20%;
+    margin: 1em;
+    border-style: solid;
+    border-radius: 12px;
+    border-color:#1A535C;
+    padding: 1em;
+  }
+
+  .mainbody {
+    flex-basis: 80%;
+    margin:1em;
   }
 }
