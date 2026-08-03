@@ -3,7 +3,10 @@
 *::after {
   box-sizing: border-box;
 }
-
+#calendar{
+  max-height: 500px;
+  width: auto;
+}
 body {
   margin: 0;
   font-family: sans-serif;
